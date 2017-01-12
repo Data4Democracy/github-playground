@@ -10,7 +10,7 @@ The sole purpose of this repository is to get people (you!) comfortable with usi
 #### Give it a try!
 
 * [Clone] (https://help.github.com/articles/cloning-a-repository/) from your command line `git clone https://github.com/Data4Democracy/github-playground.git`. Optional: [Fork](https://help.github.com/articles/fork-a-repo/) the repo first.
-* Move to main directory `cd training-ground`
+* Move to main directory `cd github-playground``
 * Check your status `git status` Should see "On Branch Master" "Your branch is up-to-date with 'origin/master'"
 * Create and checkout a branch to work from: `git checkout -b <branch_name>` EX: `git checkout -b training-branch` You can see all branches by typing `git branch`. Note: we are using training-branch in this example but by the time you follow these instructions someone may have already created `training-branch` you should create a unique branch.
 * Read about git [branching and merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
