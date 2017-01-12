@@ -3,9 +3,9 @@ A safe place to experiment with git &amp; github in a group setting
 
 
 ## Purpose
-This is a playground for open to anyone looking to practice using git & github in a group project. Feel free to make any and all changes as you test your github chops. One caveat, we ask you please do not change the main readme unless you are making an improvement (P.S. please help the next person and make improvements).
+This is a playground open to anyone looking to practice using git & github in a group project. Feel free to make any and all changes as you test your github chops. One caveat, we ask you please do not change the main readme unless you are making an improvement (P.S. please help the next person and make improvements).
 
-The sole purpose of this repository is to get people (you!) comfortable with using github do not be scared to try things out!
+To reiterate this repository is to get people (you!) comfortable with using github do not be scared to try things out!
 
 #### Give it a try!
 
