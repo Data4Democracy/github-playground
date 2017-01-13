@@ -43,5 +43,5 @@ This only scratches the surface of what is possible with git and github. Feel fr
 * Do not worry, we have all been there!
 * Join #github-help channel on slack and ask for help.
 * DM someone directly. Below users have volunteered to assist with github questions
- * @mattgawarecki, @bstarling
+ * @mattgawarecki, @bstarling, @john
 * Something was not clear or area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
