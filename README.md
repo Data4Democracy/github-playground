@@ -35,11 +35,13 @@ This only scratches the surface of what is possible with git and github. Feel fr
 
 #### Other resources
 * Github [desktop](https://desktop.github.com/) client if you prefer to work with GUI
+* [Try github](https://try.github.io/levels/1/challenges/1)
+* Lifesaving advice from [ohshitgit](http://ohshitgit.com/)
 * Udacity [course](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
 #### Encounter issues?
 * Do not worry, we have all been there!
 * Join #github-help channel on slack and ask for help.
 * DM someone directly. Below users have volunteered to assist with github questions
- * @bstarling
+ * @mattgawarecki, @bstarling
 * Something was not clear or area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
