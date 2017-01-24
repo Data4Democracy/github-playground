@@ -1,5 +1,5 @@
 # github-playground
-A safe place to experiment with git &amp; GitHub in a group setting
+A safe place to experiment with git & GitHub in a group setting
 
 
 ## Purpose
@@ -9,7 +9,7 @@ To reiterate this repository is to get people (you!) comfortable with using GitH
 
 #### Give it a try!
 
-* [Fork](https://help.github.com/articles/fork-a-repo/) the repo (this step is optional if you have have "contributer" access to the repo).
+* [Fork](https://help.github.com/articles/fork-a-repo/) the repo (this step is optional if you have have "contributor" access to the repo).
 * [Clone](https://help.github.com/articles/cloning-a-repository/) from your command line `git clone https://github.com/youruserID/github-playground.git`. 
 * Move to main directory `cd github-playground`
 * Check your status `git status` Should see "On Branch Master" "Your branch is up-to-date with 'origin/master'"
@@ -35,14 +35,14 @@ To reiterate this repository is to get people (you!) comfortable with using GitH
 This only scratches the surface of what is possible with git and GitHub. Feel free continue to use this repo when you need to test out (or document for others!) more complicated workflow.
 
 #### Other resources
-* GitHub [desktop](https://desktop.github.com/) client if you prefer to work with GUI
-* [Try github](https://try.github.io/levels/1/challenges/1)
+* Try GitHub [desktop](https://desktop.github.com/) client if you prefer to work with GUI
+* [TryGit](https://try.github.io/levels/1/challenges/1)
 * Lifesaving advice from [ohshitgit](http://ohshitgit.com/)
 * Udacity [course](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
 #### Encounter issues?
 * Do not worry, we have all been there!
-* Join #github-help channel on slack and ask for help.
+* Join #github-help channel on Slack and ask for help.
 * DM someone directly. Below users have volunteered to assist with GitHub questions:
  * @mattgawarecki, @bstarling, @john
-* Was something was not clear or was there an area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
+* Was something not clear or was there an area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
