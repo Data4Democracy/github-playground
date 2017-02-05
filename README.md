@@ -32,14 +32,14 @@ To reiterate this repository is to get people (you!) comfortable with using GitH
   * `git commit -m "More formal greeting"`
   * Do another `git push origin <branch>` and changes show automatically show up in the PR (No need to open another PR).
 
-#### Maintaining your Fork Up-to-Date with the Project Branch
+#### Maintaining Your Fork Up-to-Date with the Project Branch
 After your commit has been merged, you may want to maintain your local fork up to date:
 
 * Add the project branch as an [upstream repository](https://help.github.com/articles/configuring-a-remote-for-a-fork/) i.e. `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 * Fetch the master branch from upstream `git fetch upstream`
 * Checkout your fork's local master branch `git checkout master`
 * Merge the upstream/master `git merge upstream/master`
-* At this point you can always delete your local branch that you created (if you no longer need it) i.e. `git delete -b training-branch`
+* At this point you can always delete your local branch that you created (if you no longer need it) i.e. `git branch -d training-branch`
 * To ensure that your fork on GitHub is also up-to-date you can do `git push origin master`
 
 This only scratches the surface of what is possible with git and GitHub. Feel free continue to use this repo when you need to test out (or document for others!) more complicated workflow.
