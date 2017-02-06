@@ -44,6 +44,16 @@ After your commit has been merged, you may want to maintain your local fork up t
 
 This only scratches the surface of what is possible with git and GitHub. Feel free continue to use this repo when you need to test out (or document for others!) more complicated workflow.
 
+#### Tips for Contributing to Data for Democracy Projects
+* Use pull requests whenever possible. Direct commits to `master` are best for trivial changes.
+* Use separate branches for each enhancement or fix you're working on, unless the circumstances dictate otherwise.
+* Make your new branch from the most appropriate current branch, e.g. if you’re working on a contribution to `feature-x`, branch from this (and especially not `master`).
+* Make sure your branch is up to date before you start working.
+* Give branches appropriate names, e.g. `fix/238` (where 238 is the issue number) or `original-branch/my-feature`.
+* Make each PR as concise as possible. Don’t rewrite large sections of the codebase to fit a tiny contribution. Make a separate issue or PR for any extra modifications that need to be made.
+* Don't merge new commits from `master` to your branches: wait till the final merge into `master` (or rebase your branches to `master`)
+* Don't be scared and ask for help. Most of us have learned this "on the job".
+
 #### Other resources
 * Try GitHub [desktop](https://desktop.github.com/) client if you prefer to work with GUI
 * [TryGit](https://try.github.io/levels/1/challenges/1)
