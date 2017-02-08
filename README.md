@@ -54,7 +54,7 @@ This only scratches the surface of what is possible with git and GitHub. Feel fr
 * Don't merge new commits from `master` to your branches: wait till the final merge into `master` (or rebase your branches to `master`)
 * Don't be scared and ask for help. Most of us have learned this "on the job".
 
-#### Other resources
+#### Additional resources
 * Try GitHub [desktop](https://desktop.github.com/) client if you prefer to work with GUI
 * [TryGit](https://try.github.io/levels/1/challenges/1)
 * Lifesaving advice from [ohshitgit](http://ohshitgit.com/)
