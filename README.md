@@ -59,6 +59,8 @@ This only scratches the surface of what is possible with git and GitHub. Feel fr
 * [TryGit](https://try.github.io/levels/1/challenges/1)
 * Lifesaving advice from [ohshitgit](http://ohshitgit.com/)
 * Udacity [course](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+* [Learn Version Control with Tower](https://www.git-tower.com/learn/git/videos/) (videos)
+* [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows) for learning how the Forking Workflow…works
 
 #### Encounter issues?
 * Do not worry, we have all been there!
