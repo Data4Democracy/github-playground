@@ -1,1 +1,2 @@
 echo "print("hello")" > hello.py
+echo "print("test2")"
