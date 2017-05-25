@@ -1,8 +1,8 @@
 def gen_fibonacci():
-    seed, next  = 0, 1
+    seed, next_  = 0, 1
     while True:
-        next, seed = seed, next + seed
-        yield (next)
+        next_, seed = seed, next_ + seed
+        yield (next_)
 
 def main(n):
     for m in gen_fibonacci():
