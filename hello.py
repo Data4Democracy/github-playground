@@ -1,1 +1,1 @@
-print("hello")
+print("Stop and smell the roses!")
