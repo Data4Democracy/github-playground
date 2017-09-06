@@ -1,3 +1,1 @@
-print("Stop and smell the roses!")
-
-print("Bruce was here")
+"print("hello good sir")" 
