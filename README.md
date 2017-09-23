@@ -64,7 +64,7 @@ This only scratches the surface of what is possible with git and GitHub. Feel fr
 
 #### Encounter issues?
 * Do not worry, we have all been there!
-* Join #github-help channel on Slack and ask for help.
+* Join [#github-help](https://datafordemocracy.slack.com/messages/github-help/) channel on Slack and ask for help.
 * DM someone directly. Below users have volunteered to assist with GitHub questions:
  * @mattgawarecki, @bstarling, @john
 * Was something not clear or was there an area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
