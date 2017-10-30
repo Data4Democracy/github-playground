@@ -14,15 +14,15 @@ To reiterate this repository is to get people (you!) comfortable with using GitH
 * Move to main directory `cd github-playground`
 * Check your status `git status` Should see "On Branch Master" "Your branch is up-to-date with 'origin/master'"
 * Create and checkout a branch to work from: `git checkout -b <branch_name>` EX: `git checkout -b training-branch` You can see all branches by typing `git branch`. Note: we are using training-branch in this example but by the time you follow these instructions someone may have already created `training-branch` you should create a unique branch.
-* Read about git [branching and merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+* Read about git [branching and merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 * Make a change to an existing file or create a new file and save. `EX: echo "print("hello")" > hello.py`
 * Check status of your change with `git status`. Your file should show up under "Untracked Files" EX: `hello.py` or whatever file you created.
 * Add file to changes `git add <filename>` or `git add .` (adds all untracked files -- CAREFUL use with caution) EX: `git add hello.py`
-* See exactly what [changes](https://git-scm.com/docs/git-diff) are staged `git diff --cached` (or `git diff` if files are not yet staged)
+* See exactly what [changes](https://git-scm.com/docs/git-diff) are staged `git diff --cached` (or `git diff` if files are not yet staged).
 * Commit your changes `git commit -m "Hey this is my first commit"` [Read](http://chris.beams.io/posts/git-commit/) about how to write good commit messages.
 * Check your [remote](https://help.github.com/articles/adding-a-remote/) `git remote -v` (if you started by cloning a repo from GitHub origin should already be set)
-* [Push](https://help.github.com/articles/pushing-to-a-remote/) your changes to the remote server by typing `git push <remote-name> <your-branch>` EX `git push origin training-branch`
-* Open the repo in GitHub and select your [branch](https://help.github.com/articles/viewing-branches-in-your-repository/)
+* [Push](https://help.github.com/articles/pushing-to-a-remote/) your changes to the remote server by typing `git push <remote-name> <your-branch>` EX: `git push origin training-branch`
+* Open the repo in GitHub and select your [branch](https://help.github.com/articles/viewing-branches-in-your-repository/).
 * You should see [compare and pull request](https://help.github.com/articles/about-pull-requests/). This will bring up a summary of your changes and show you what branch you are merging.
 * Edit your message and click submit. Now you should see your pull request show up in the pull requests tab!
 * In a real project your PR may be discussed and reviewed. Stakeholders may suggest changes or updates and (hopefully) eventually your code will be merged!
@@ -51,12 +51,12 @@ This only scratches the surface of what is possible with git and GitHub. Feel fr
 * Make sure your branch is up to date before you start working.
 * Give branches appropriate names, e.g. `fix/238` (where 238 is the issue number) or `original-branch/my-feature`.
 * Make each PR as concise as possible. Don’t rewrite large sections of the codebase to fit a tiny contribution. Make a separate issue or PR for any extra modifications that need to be made.
-* Don't merge new commits from `master` to your branches: wait till the final merge into `master` (or rebase your branches to `master`)
+* Don't merge new commits from `master` to your branches: wait till the final merge into `master` (or rebase your branches to `master`).
 * Don't be scared and ask for help. Most of us have learned this "on the job".
 
 #### Additional resources
 * Try GitHub [desktop](https://desktop.github.com/) client if you prefer to work with GUI
-* [TryGit](https://try.github.io/levels/1/challenges/1)
+* Created by Code School: [TryGit](https://try.github.io/levels/1/challenges/1) teaches you how to use Git in 15 minutes
 * Lifesaving advice from [ohshitgit](http://ohshitgit.com/)
 * Udacity [course](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 * [Learn Version Control with Tower](https://www.git-tower.com/learn/git/videos/) (videos)
@@ -66,5 +66,5 @@ This only scratches the surface of what is possible with git and GitHub. Feel fr
 * Do not worry, we have all been there!
 * Join [#github-help](https://datafordemocracy.slack.com/messages/github-help/) channel on Slack and ask for help.
 * DM someone directly. Below users have volunteered to assist with GitHub questions:
- * @mattgawarecki, @bstarling, @john
+  * @mattgawarecki, @bstarling, @john
 * Was something not clear or was there an area you struggled with? Submit a [Pull request](https://help.github.com/articles/about-pull-requests/) (PR) or open an [issue](https://help.github.com/articles/creating-an-issue/) to help us improve!
