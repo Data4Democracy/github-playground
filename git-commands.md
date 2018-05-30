@@ -44,6 +44,11 @@ git status
 git commit -m "Added myname module. Minor modification to hello.py"
 ```
 
+   - Instead of specifying each file in the `git add` line, we can do:
+```
+git add --all
+```
+
 7. The `.gitignore` file is special, because it contains the names of the files which should be ignored by Git, like for instance, python `.pyc` files. It is Ok to use wildcards inside it
 ```
 vim .gitignore
@@ -56,13 +61,18 @@ git commit -m "Created .gitignore"
 git log
 ```
 
-9. You made a change in `.gitignore`, but then changed your mind and **dropped it**. This instruction changes file back to where it was at last commit
+9. The command `git log` provides, besides the commit messages of the changes, the **_SHA_** ID of every commit. Then, one can use the command `git show SHA` to get a detailed description of the changes related to that commit:
+```
+git show fcf22e5d3cf1c
+```
+
+10. You made a change in `.gitignore`, but then changed your mind and **dropped it**. This instruction changes the file back to where it was at last commit
 ```
 vim .gitignore
 git checkout -- .gitignore
 ```
 
-10. You decided to apply and commit other change
+11. You decided to apply and commit other change
 ```
 vim .gitignore
 git status
@@ -70,12 +80,16 @@ git add .gitignore
 git commit -m "Modifying .gitignore to exclude all .pyc files"
 ```
 
-11. Take a look at what is different from our last commit. In this case we want the diff of our most recent commit, and we can refer to it using **_HEAD_**
+12. Take a look at what is different from our last commit. In this case we want the diff of our most recent commit, and we can refer to it using **_HEAD_**
 ```
 git diff HEAD
 ```
+If what we want to check is whether we are about to commit a file with whitespace errors, let's use:
+```
+git diff --check
+```
 
-12. We can unstage files by using the `git reset` command
+13. We can unstage files by using the `git reset` command
 ```
 git reset octofamily/octodog.txt
 ```
@@ -97,18 +111,21 @@ git checkout -b my_new_feature
 git branch
 ```
 
-4. Back to the top of the main branch (**_master_**)
+4. Back to the top of the main branch (**_master_**), and confirm we are indeed there
 ```
 git checkout master
+git branch
 ```
 
-5. Change back to the new branch
+5. Change back to the new branch. Confirm we are where we want
 ```
 git checkout my_new_feature
+git branch
 ```
 
-6. We are inside the NEW `my_new_feature` branch, so further changes will go in there
+6. We are inside the **NEW** `my_new_feature` branch, so further changes will go in there
 ```
+vim hello.py
 git add hello.py
 git commit -m "Added code for feature x"
 ```
@@ -162,11 +179,13 @@ git commit -m "Renaming file"
 2. Removing files (wildcards are also valid)
 ```
 git rm <target-file>
+git commit -m "Removed target file"
 ```
 
 3. Removing directories
 ```
 git rm -r folder_of_cats
+git commit -m "Removed directory 'folder_of_cats'"
 ```
 
 4. Set user email and name _for every repository_ in your computer
@@ -181,9 +200,21 @@ git config user.email "user@example.com"
 git config user.name "User Surname"
 ```
 
+6. Several aspects of Git behavior, like aliases, may be set up at file `~/.gitconfig`. An example content could be:
+```
+[user]
+    name = architest
+    email = 23104729+architest@users.noreply.github.com
+[color]
+    ui = true
+[alias]
+    co = checkout
+    br = branch
+```
+
 ## Handling remote repositories
 
-1. Download a full repository
+1. Download (_clone_) a full repository
 ```
 git clone https://github.com/jima80525/github-playground.git
 ```
@@ -208,14 +239,46 @@ git push origin master
 git push -u origin master
 ```
 
-6. Pulling, but in a more compact way
+6. _Pulling_, but in a more compact way
 ```
 git pull origin master
 ```
+'Pulling' can be seen as the combination of two commands: `git fetch`, which fetches down all the changes on the server that we don't have yet, but doesn't modify the working directory, and `git merge`, which combines remote and local data.
 
-7. Add a remote repository to push our local repo to the GitHub server (i.e.: We created out repository from scratch and we are setting `origin` in order to be able to _push it_ to a remote server)
+7. Add a remote repository to push our local repo to the GitHub server (i.e.: We created our repository from scratch, and we are setting `origin` in order to be able to _push it_ to a remote server)
 ```
 git remote add origin https://github.com/try-git/try_git.git
+```
+
+8. In order to make a _tracking branch_, i.e., a local branch that automatically tracks a remote branch, we can do:
+```
+git checkout -b serverfix origin/serverfix
+```
+In this way, the local _serverfix_ branch tracks the remote _serverfix_ branch in _origin_. A shorthand for the former operation is:
+```
+git checkout --track origin/serverfix
+```
+If the local branch doesn't exist, and you know the (unique) name of the branch in the remote, we can even do:
+```
+git checkout serverfix
+```
+If one wants to use a different name for the local branch (_myfix_ in this example):
+```
+git checkout -b myfix origin/serverfix
+```
+
+9. In order to see which tracking branches have been setup, we use the `-vv` option with `git branch`:
+```
+ git branch -vv
+        iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+        master    1ae2a45 [origin/master] deploying index fix
+      * serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+        testing   5ea463a trying something new
+```
+Or, even better, to get completely up-to-date numbers from all tracked remotes:
+```
+git fetch -all
+git branch -vv
 ```
 
 ## Configure Git to sync your fork with the original repository
