@@ -1,1 +1,1 @@
-"print("hello")" 
+"print("Gday mate\n")" 
