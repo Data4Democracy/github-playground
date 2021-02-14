@@ -1,2 +1,1 @@
-print(hello sir.)
-print("PR practice, thanks")
+"print("hello good sir")" 
