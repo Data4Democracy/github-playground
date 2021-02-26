@@ -3,5 +3,5 @@ function helloWorld () {
 }
 
 function helloWorldTwo () {
-    console.log('hello test 2');
+    console.log('hello test 3');
 }
